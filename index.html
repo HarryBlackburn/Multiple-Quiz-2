@@ -1,23 +1,50 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE html>
+<html>
 <head>
-    
-    <title> Harry's Mancunain Quiz </title>
-    <link href="css/main.css" rel="stylesheet" type="text/css"/>
-    <script src="js/jquery.js"></script> 
-    <script src="js/controller.js"></script>
+        <title> Harry Archer | Welcome </title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content"width=device-width; intial-scale=1; maximum-scale=1"> 
+        <style type="text/css"></style>
+        <script src="https://use.fontawesome.com/71924d4422.js"></script>
 
+<title>Harry's Mad Manchester Quiz</title>
 </head>
+<body>
+        
 
-    <body> 
-        <div id="topbar">How much do you know about Manchester?</div>
-        <div class="spacer"></div>
-        <div id="navContent">
-            <div id="game1"></div>
-            <div id="game2"></div>
-    </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    
-</html>
+        <form id="form1">
+                <fieldset>
+                <h2>What is the greatest city on Earth</h2>
+                <label for="var_string"><input type="radio" name="city" value="0" id="var_string" />Liverpool</label>
+                <label for="var_join"><input type="radio" name="city" value="0" id="var_join" />Leeds</label>
+                <label for="var_info"><input type="radio" name="city" value="25" id="var_info" />Manchester</label>
+                <label for="var_condition"><input type="radio" name="city" value="0" id="var_condition"/>London</label>
+                
+                <h2>Who's the bigeest team?</h2>
+                <label for="sub_string"><input type="radio" name="football" value="25" id="sub_string"/>Manchester United FC</label>
+                <label for="sub_join"><input type="radio" name="football" value="0" id="sub_join"/>Manchester City FC</label>
+                <label for="sub_info"><input type="radio" name="football" value="0" id="sub_info" />Liverpool FC</label>
+                <label for="sub_condition"><input type="radio" name="football" value="0" id="sub_condition" />Chelsea? haha</label>
+                
+                <h2>Which of these musciains/bands is NOT from Manchester? </h2>
+                <label for="cat_string"><input type="radio" name="music" value="0" id="cat_string" />Identifies a portion of a string.</label>
+                <label for="cat_join"><input type="radio" name="music" value="25" id="cat_join" />A method to join strings.</label>
+                <label for="cat_info"><input type="radio" name="music" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
+                <label for="cat_condition"><input type="radio" name="music" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
+                
+                <h2>Which is the best description of an if statement?</h2>
+                <label for="if_string"><input type="radio" name="other" value="0" id="if_string" />Identifies a portion of a string.</label>
+                <label for="if_join"><input type="radio" name="other" value="0" id="if_join" />A method to join strings.</label>
+                <label for="if_info"><input type="radio" name="other" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
+                <label for="if_condition"><input type="radio" name="other"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label>
+                
+                <button type="submit" value="Submit">Submit</button>
+                </fieldset>
+                </form>
+
+                <p>Your grade is: <span id="grade">__</span></p>
+                <p id="grade2"></p>
+                
+</body>
