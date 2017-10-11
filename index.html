@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>JavaScript Quiz</title>
+<title>Harry's Manchester Quiz</title>
 <style>
 
 body {
-background-color: lightblue;
-font-family: Helvetica;
+background-color: #373737;
+font-family: proxima, sans-serif; 
 }
 
 #main {
 width: 80%;
 max-width: 950px;
-border: 1px gray solid;
 margin: auto;
 padding: 10px;
-background-color: white;
+background-color: grey;
 border-radius: 10px;
 }
 
@@ -23,10 +22,11 @@ border-radius: 10px;
 margin-top: 0;
 border: 2px solid black;
 padding: 5px;
-height: 250px;
-background: beige;
+height: 100px;
+background-color:#dcd0c0; 
 background-image: url("code.jpg");
-color: white;
+color:#373737;
+text-align: center; 
 }
 
 label {
@@ -41,6 +41,12 @@ margin-left: 20px;
 h2 {
 clear: both;
 padding-top: 20px;
+font-family: sans-serif; 
+color: #dcd0c0; 
+}
+
+p {
+    color: #dcd0c0; 
 }
 
 button {
@@ -48,6 +54,27 @@ width: 100px;
 margin-top: 20px;
 }
 
+.grade {
+    font-style: oblique; 
+}
+
+.button {
+
+	border: 3px solid #dcd0c0;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	color: #dcd0c0;
+	text-align: center;
+	display: block;
+	font-weight: 600;
+	text-transform: uppercase;
+	
+}
+
+.button:hover {
+	color: #fff;
+	background-color: #dcd0c0;
+}
 </style>
 
 </head>
@@ -55,7 +82,7 @@ margin-top: 20px;
 <body>
         <div id="main"><!-- open main div -->
         <div id="header"><!-- open header div -->
-        <h1>JavaScript Quiz</h1>
+        <h1>Harry's Maddddchester Quiz!!</h1>
         </div><!-- close header div -->
         
         <form id="form1">
@@ -80,16 +107,16 @@ margin-top: 20px;
                 
                 <h2>Which of the following did NOT originate from Greater/Manchester</h2>
                 <label for="if_string"><input type="radio" name="history" value="0" id="if_string" />The Police</label>
-                <label for="if_join"><input type="radio" name="history" value="0" id="if_join" />Cotton Industry</label>
+                <label for="if_join"><input type="radio" name="history" value="0" id="if_join" />The Cotton Industry</label>
                 <label for="if_info"><input type="radio" name="history" value="0" id="if_info" />The Computer</label>
                 <label for="if_condition"><input type="radio" name="history"  value="25" id="if_condition" />The Royal Family</label>
                 
-                <button type="submit" value="Submit">Submit</button>
+                <button class="button" type="submit" value="Submit">Submit</button>
                 </fieldset>
                 </form>
                 
                 
-        <p>Your grade is: <span id="grade">__</span></p>
+        <p>Your grade is: <span id="grade"></span></p>
         <p id="grade2"></p>
 
         </div><!-- close main div -->
@@ -106,11 +133,11 @@ margin-top: 20px;
                        
                     document.getElementById("grade").innerHTML = result;
 
-                    if (result == 0) {result2 = "I don't think you studied."};
-                    if (result == 25) {result2 = "You need to spend more time. Try again."};
-                    if (result == 50) {result2 = "I think you could do better. Try again."};
-                    if (result == 75) {result2 = "So close. Try again."};
-                    if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
+                    if (result == 0) {result2 = "I dont think you belong here :D"};
+                    if (result == 25) {result2 = "You need to spend more time with the locals"};
+                    if (result == 50) {result2 = "I think you could do better, spend more time in local pubs"};
+                    if (result == 75) {result2 = "So close. Try again"};
+                    if (result == 100) {result2 = "Excellent! You're an honorary manc"};
                     document.getElementById("grade2").innerHTML = result2;
                     
                         return false;
