@@ -60,7 +60,7 @@ margin-top: 20px;
         
         <form id="form1">
                 <fieldset>
-                <h2>Whats the greatest football team in the world? </h2>
+                <h2>What's the greatest football team in the world? </h2>
                 <label for="var_string"><input type="radio" name="football" value="0" id="var_string" />Chelsea FC</label>
                 <label for="var_join"><input type="radio" name="football" value="0" id="var_join" />Manchester City FC</label>
                 <label for="var_info"><input type="radio" name="football" value="25" id="var_info" />Manchester United FC</label>
@@ -70,19 +70,19 @@ margin-top: 20px;
                 <label for="sub_string"><input type="radio" name="city" value="25" id="sub_string"/>Manchester</label>
                 <label for="sub_join"><input type="radio" name="city" value="0" id="sub_join"/>London</label>
                 <label for="sub_info"><input type="radio" name="city" value="0" id="sub_info" />Atlantis</label>
-                <label for="sub_condition"><input type="radio" name="city" value="0" id="sub_condition" />Liverppol</label>
+                <label for="sub_condition"><input type="radio" name="city" value="0" id="sub_condition" />Liverpool</label>
                 
-                <h2>Which is the best description of concatenation?</h2>
-                <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
-                <label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />A method to join strings.</label>
-                <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
-                <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
+                <h2>Which of these bands/muscians are NOT from Manchester?</h2>
+                <label for="cat_string"><input type="radio" name="music" value="0" id="cat_string" />New order</label>
+                <label for="cat_join"><input type="radio" name="music" value="25" id="cat_join" />The Beatles</label>
+                <label for="cat_info"><input type="radio" name="music" value="0" id="cat_info" />Oasis</label>
+                <label for="cat_condition"><input type="radio" name="music" value="0" id="cat_condition" />Stone Roses</label>
                 
-                <h2>Which is the best description of an if statement?</h2>
-                <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label>
-                <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label>
-                <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
-                <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label>
+                <h2>Which of the following did NOT originate from Greater/Manchester</h2>
+                <label for="if_string"><input type="radio" name="history" value="0" id="if_string" />The Police</label>
+                <label for="if_join"><input type="radio" name="history" value="0" id="if_join" />Cotton Industry</label>
+                <label for="if_info"><input type="radio" name="history" value="0" id="if_info" />The Computer</label>
+                <label for="if_condition"><input type="radio" name="history"  value="25" id="if_condition" />The Royal Family</label>
                 
                 <button type="submit" value="Submit">Submit</button>
                 </fieldset>
@@ -98,8 +98,8 @@ margin-top: 20px;
                 document.getElementById("form1").onsubmit=function() {
                        variable = parseInt(document.querySelector('input[name = "football"]:checked').value);
                        sub = parseInt(document.querySelector('input[name = "city"]:checked').value);
-                       con = parseInt(document.querySelector('input[name = "con"]:checked').value);
-                       ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+                       con = parseInt(document.querySelector('input[name = "music"]:checked').value);
+                       ifstate = parseInt(document.querySelector('input[name = "history"]:checked').value);
                        
                        
                        result = variable + sub + con + ifstate;
