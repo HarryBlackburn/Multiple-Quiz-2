@@ -1,88 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content"width=device-width; intial-scale=1; maximum-scale=1"> 
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Harry's Manchester Quiz</title>
-<style>
-
-body {
-background-color: #373737;
-font-family: proxima, sans-serif; 
-}
-
-#main {
-width: 80%;
-max-width: 950px;
-margin: auto;
-padding: 10px;
-background-color: grey;
-border-radius: 10px;
-}
-
-#header {
-margin-top: 0;
-border: 2px solid black;
-padding: 5px;
-height: 100px;
-background-color:#dcd0c0; 
-background-image: url("code.jpg");
-color:#373737;
-text-align: center; 
-}
-
-label {
-display: block;
-}
-
-input {
-width: 30px;
-margin-left: 20px;
-}
-
-h2 {
-clear: both;
-padding-top: 20px;
-font-family: sans-serif; 
-color: #dcd0c0; 
-}
-
-p {
-    color: #dcd0c0; 
-}
-
-button {
-width: 100px;
-margin-top: 20px;
-}
-
-.grade {
-    font-style: oblique; 
-}
-
-.button {
-
-	border: 3px solid #dcd0c0;
-	letter-spacing: 0.2em;
-	text-decoration: none;
-	color: #dcd0c0;
-	text-align: center;
-	display: block;
-	font-weight: 600;
-	text-transform: uppercase;
-	
-}
-
-.button:hover {
-	color: #fff;
-	background-color: #dcd0c0;
-}
-</style>
 
 </head>
 
 <body>
         <div id="main"><!-- open main div -->
         <div id="header"><!-- open header div -->
-        <h1>Harry's Maddddchester Quiz!!</h1>
+        <h1> <img alt="Website" src="logo3.png"></h1>
         </div><!-- close header div -->
         
         <form id="form1">
@@ -134,10 +63,10 @@ margin-top: 20px;
                     document.getElementById("grade").innerHTML = result;
 
                     if (result == 0) {result2 = "I dont think you belong here :D"};
-                    if (result == 25) {result2 = "You need to spend more time with the locals"};
-                    if (result == 50) {result2 = "I think you could do better, spend more time in local pubs"};
+                    if (result == 25) {result2 = "You need to spend more time with the locals!"};
+                    if (result == 50) {result2 = "I think you could do better, have a drink with a local you can bareley understand!!"};
                     if (result == 75) {result2 = "So close. Try again"};
-                    if (result == 100) {result2 = "Excellent! You're an honorary manc"};
+                    if (result == 100) {result2 = "Excellent! You're an 'honorary' Manc!"};
                     document.getElementById("grade2").innerHTML = result2;
                     
                         return false;
